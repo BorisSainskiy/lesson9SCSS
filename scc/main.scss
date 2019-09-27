@@ -1,0 +1,361 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.container {
+    width: 100%;
+    height: 880px;
+    background-image: url(../img/main_image.jpg);
+
+        header {
+            margin-left: 185px;
+            margin-right: 185px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: $mainColor2;
+        }
+
+        nav {
+            @include text ($mainColor2, $fontFamily, 14px, 900, 0.7px) {
+                margin-top: 50px;
+                text-transform: uppercase;
+            }
+            
+            p {
+                margin: 0px;
+            }
+
+            span {
+                margin-left: 20px;
+            }
+        } 
+
+        main {
+            text-align: center;
+            margin-top: 234px;
+
+            #title_1 {
+                @include text ($mainColor2, Times New Roman, 36px, 400, 1.8px) {
+                    font-style: italic;
+                    opacity: 0.7;
+                    
+                }
+            }
+
+            #title_2 {
+                @include text ($mainColor2, $fontFamily, 100px, 700, 5px) {
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    display: block;
+                    margin-top: 40px;
+                }
+           }
+
+           button {
+                @include text ($mainColor2, $fontFamily, 18px, 700, 0.7px) {
+                    background-color: Transparent;
+                    background-repeat:no-repeat;
+                    cursor:pointer;
+                    border: 3px solid #ffffff;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    width: 260px;
+                    height: 68px;
+                    margin-top: 70px;
+                } 
+           }
+
+           p {
+                @include text ($mainColor2, $fontFamily, 14px, 400, 0.7px) {
+                    opacity: 0.7;    
+                    text-transform: uppercase;
+                    margin-top: 40px;
+                }
+
+                a {
+                    color: #ffffff;
+                    font-family: "Lato - Bold";
+                    font-weight: 700;
+                    letter-spacing: 0.7px;
+                }
+           }
+        }
+}
+
+#about {
+    width: 100%;
+    height: 436x;
+
+    p {
+        width: 380px;
+        height: 67px;
+        @include text ($mainColor1, $fontFamily, 16px, 300, 0.8px) {
+            line-height: 18px;
+            opacity: 0.7;
+            margin: 0px;
+            margin-top: 20px;
+        }
+    }
+
+    h3 {
+        @include text ($mainColor1, $fontFamily, 18px, 700, 0.9px) {
+            line-height: 30px;
+            text-transform: uppercase;
+            margin: 0px;
+            margin-top: 10px;
+            widows: 150px;
+            height: 17px;
+        }
+    }
+}
+
+#allBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 97px;
+    margin-top: 101px;
+
+    div:not(:last-child) {
+        margin-right: 45px;
+    }
+}
+
+#app {
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 881px;
+    width: 100%;
+}
+
+#text {
+    width: 543px;
+    @include text ($mainColor1, $fontFamily, 16px, 300, 0.8px ) {
+        line-height: 18px;
+        margin-bottom: 0px;
+        margin-left: 115px;
+        margin-top: 182px;
+    }
+
+    h3 {
+        margin-bottom: 0px;
+        width: 289px;
+        height: 14px;
+        @include text ($mainColor1, $fontFamily, 18px, 700, 0.9px ) {
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+        line-height: 25px;
+        font-weight: 350;
+        width: 580px;
+        opacity: 0.7;
+    }
+} 
+
+#iphone {
+    margin-top: 102px;
+}
+
+#app_stores img:not(:last-child) {
+    margin-right: 10px;
+}
+
+#reviews {
+    width: 100%;
+    height: 462px;
+    background-image: url(../img/reviews.jpg);
+
+    div {
+        text-align: center;
+        padding-top: 84px;
+        
+    } 
+
+    p {
+        width: 886px;
+        height: 112px;
+        @include text ($mainColor2, $fontFamily, 30px, 100, 0.3px ) {
+            line-height: 36px;
+            opacity: 0.3;
+            margin-left: 350px;
+        }
+    }
+}
+
+#adress {
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+#cuisines  {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+}
+
+#title {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 40px;
+
+    > h1 {
+        margin: 0px;
+        width: 215px;
+        height: 14px;
+        @include text ($mainColor1, $fontFamily, 18px, 700, 0.9px ) {
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#mills {
+    width: 100%;
+    height: 450px;
+
+    div {
+        width: 20%;
+        height: 225px;
+        float: left;
+        color: $mainColor2;
+    }
+
+    h5 {
+        @include text ($mainColor2, $familyForTitles, 15px, 400, 0.9px ) {
+            font-style: italic;
+            opacity: 0.9;
+            letter-spacing: 1.8px;
+            margin-top: 76px;
+            margin-bottom: 0px;
+        }
+    }
+
+    h1 {
+        @include text ($mainColor2, $fontFamily, 36px, 700, 4.22px ) {
+            margin-top: 8px;
+            margin-bottom: 0px;
+            height: 28px;
+            padding-right: 0px;
+        }
+    }
+}
+
+#ITALIAN {
+    background-image: url(../img/Layer_6.png);
+}
+
+#INDIAN {
+    background-image: url(../img/Layer_7.png);
+}
+
+#FRENCH {
+    background-image: url(../img/Layer_8.png);
+}
+
+#STEAKHOUSE {
+    background-image: url(../img/Layer_9.png);
+}
+
+#SEAFOOD {
+    background-image: url(../img/Layer_10.png);
+}
+
+#SUSHI {
+    background-image: url(../img/Layer_11.png);
+}
+
+#MEXICAN {
+    background-image: url(../img/Layer_12.png);
+}
+
+#CHINESE {
+    background-image: url(../img/Layer_13.png);
+}
+
+#PIZZA {
+    background-image: url(../img/Layer_15.png);
+}
+
+#AMERICAN {
+    background-image: url(../img/Layer_14.png);
+}
+
+#statistic {
+    text-align: center;
+    height: 156px;
+    margin-top: 59px;
+
+    div {
+        display: inline-block;
+        margin-right: 100px;
+        > h2 {
+            @include text ($mainColor1, $fontFamily, 36px, 700, 1.8px ) {
+                margin-top: 0px;
+                margin-bottom: 12px;
+            }
+        }
+
+        > h5 {
+            @include text ($mainColor1, $fontFamily, 16px, 300, 0.8px ) {
+               display: inline;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        
+    }
+}
+
+footer {
+    width: 100%;
+    height: 93px;
+    background-color:  $bgColor;
+}
+
+#license {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin: 0 210px;
+}
+
+#license1 {
+    opacity: 0.5;
+    color: $colorForFooter;
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#license2 {
+    font-family: Lato;
+    font-size: 14px;
+    color: $colorForFooter;
+    font-weight: 300;
+    letter-spacing: 2.8px;
+
+    span {
+        @include text ($mainColor1, $fontFamily, 14px, 400, 2.8px ) {
+
+        }
+    }
+}
+
+
+
+
+
+
