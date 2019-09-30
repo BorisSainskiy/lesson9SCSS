@@ -230,6 +230,11 @@
   padding-top: 78px;
 }
 
+#reviews #block img {
+  width: 100px;
+  margin: 0 auto;
+}
+
 #reviews #block p {
   width: 886px;
   height: 112px;
