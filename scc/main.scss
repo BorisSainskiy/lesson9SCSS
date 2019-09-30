@@ -259,10 +259,14 @@
     height: 450px;
 
     div {
-        width: 20%;
+        width: 100%;
         height: 225px;
-        float: left;
-        color: $mainColor2;
+    }
+
+    .row {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
     }
 
     h5 {
