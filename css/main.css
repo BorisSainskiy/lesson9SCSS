@@ -236,6 +236,7 @@
 }
 
 #reviews #block p {
+  margin: 0 auto;
   width: 886px;
   height: 112px;
   font-weight: 100;
@@ -249,8 +250,10 @@
 }
 
 #reviews #block div {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 50px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

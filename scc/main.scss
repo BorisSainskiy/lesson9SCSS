@@ -190,6 +190,7 @@
         }
 
         p {
+            margin: 0 auto;
             width: 886px;
             height: 112px;
             @include text ($mainColor2, $fontFamily, 30px, 100, 0.3px ) {
@@ -200,8 +201,10 @@
         } 
 
         div {
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
             width: 50px;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
 
